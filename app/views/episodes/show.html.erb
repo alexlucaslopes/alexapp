@@ -1,19 +1,28 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
 
-<p>
-  <strong>Name:</strong>
-  <%= @episode.name %>
-</p>
+          <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @episode.description %>
-</p>
+          <p>
+            <strong>Name:</strong>
+            <%= @episode.name %>
+          </p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @episode.content %>
-</p>
+          <p>
+            <strong>Description:</strong>
+            <%= @episode.description %>
+          </p>
 
-<%= link_to 'Edit', edit_episode_path(@episode) %> |
-<%= link_to 'Back', episodes_path %>
+          <p>
+            <strong>Content:</strong>
+            <%= @episode.content %>
+          </p>
+
+          <%= link_to 'Edit', edit_episode_path(@episode) %> |
+          <%= link_to 'Back', episodes_path %>
+
+        </div>
+      </div>
+</div>
